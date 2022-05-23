@@ -1,0 +1,103 @@
+
+% Para poner una foto-------------------
+\begin{figure}[H]
+    \centering
+    \includegraphics[tamaño]{Fotos/logo fiuba.png}
+    \caption{xxxxxxx}
+\end{figure}
+
+% Armar Tabla---------------------------
+\begin{table}[H]
+    \centering
+    \begin{tabular}{| c | c | c |}\hline
+    \textbf{Punto Crítico} & \textbf{Estabilidad} & \textbf{Autovalores} \\ \hline
+    Nodo & Inestable & $\lambda_{1} >\lambda_{2} > 0$           \\ \hline
+    Espiral & Estable &$\lambda = a +bi, a=0$           \\ \hline
+\end{tabular}
+    \\Tabla 1: Autovalores segun punto crítico y estabilidad.
+\end{table}
+
+%PARA QUE APAREZCAN LAS SUBSECCIONES CON LETRAS Y NO CON NUMEROS 
+\renewcommand{\thesubsection}{\thesection.\alph{subsection}}
+
+
+% Formato textos---------------
+\textbf{}
+\textit{}
+\textsc{}
+\underline
+\acute{a}
+\grave{a}
+\tilde{a}
+\bar{a} 
+\hat{a} %^
+\vec{a} %flecha
+\dot{a} %puntito arriba de a
+\ddot{a}
+\dddot{a} 
+\ul{} %subrayar
+\texttt{} %maquina d escribir
+
+%Simbolos:
+https://manualdelatex.com/simbolos
+
+
+% Ecuaciones-------------------
+\begin{equation}
+    % Fracciones
+        \frac{120}{527}
+        \left(\frac{5}{15}\right) %para que se acomode el parentesis
+    % Raices
+        \sqrt[4]{16}
+    % Subindice
+        y_{a}
+    % Superindice
+        y^a
+    %llaves
+        \{8\}
+        |3|
+        \|5\| % ||5||
+        \langle 7 \rangle %<7>
+    %Sumatoria
+        \sum_{n=1}^{10}n
+    %Productoria
+        \prod_{n=1}^{10}n
+    %Integrales
+        \int_0^{\infty} x \mathrm{d}x
+        \iint %(doble) \iiint (triple) etc...
+    %Limites 
+        \lim_{x\rightarrow\infty}\frac{3+x}{x^2}
+    %Matrices
+        \begin{matrix}
+        5 & 4 & 8 \\
+        4 & 0 & 7 \\
+        3 & 5 & 6
+        \end{matrix}
+        %pmatrix=parentesis; bmatrix=corchetes[]; bmatrix=llaves{};vmatrix= modulo ||; Vmatrix= norma ||x|| 
+    %Vectores
+        \vec{x} %me pone una flechita en la v
+        \hat{x} %me pone el sombrerito en la v
+        \vec{u}\cdot \vec{v} %producto escalar
+        \vec{u}\times \vec{v} %producto vectorial
+    %Texto en la ecuacion
+        F = ma \quad\text{Segunda ley de Newton}
+        f(x) = 2x \quad\mathrm{si}\quad x < 2
+    %Laplace; Fourier; etc..
+        \mathcal{F}
+        \mathcal{L}
+    %Conjunto de numeros
+        \mathbb{N}
+        \mathbb{Z}
+    %Letra gotica
+         \mathfrak 
+         
+    \label{eq:nombre ecuacion}
+\end{equation}
+
+%Para referenciar la ecuacion pongo:
+ecuación~\ref{eq:label equation}.
+
+
+% Notas al pie de pagina
+
+bla bla bla\footnote{Detalles interesantes de esa parte}
